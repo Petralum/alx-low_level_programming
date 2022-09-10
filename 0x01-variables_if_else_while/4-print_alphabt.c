@@ -11,10 +11,10 @@ int main(void)
 {
 	int ch;
 
-	for ((ch = 'a'); ch != 'e','q'; ch <= 'z';); ch++;
+	for ((ch = 'a'); ch != 'e','q'; ch <= 'z';); ch++)
 	{
 		putchar();
 	}
-	
+
 	return (0);
 }
