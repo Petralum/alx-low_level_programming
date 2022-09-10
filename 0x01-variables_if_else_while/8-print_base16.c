@@ -5,7 +5,6 @@
   */
 
 int main(void)
-
 {
 	int num;
 	char ch;
