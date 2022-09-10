@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
-  * maim - Entry point
+  * maim - Assign a random  number to a value n
   *
   * Return: Always 0 (Success)
   */
