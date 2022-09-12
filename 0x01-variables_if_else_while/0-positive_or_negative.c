@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
-  * maim - Assign a random  number to a value n
+  * main - Print whether number in variable n is positive or negative
   *
   * Return: Always 0 (Success)
   */
@@ -26,4 +26,3 @@ int main(void)
 	}
 	return (0);
 }
-
