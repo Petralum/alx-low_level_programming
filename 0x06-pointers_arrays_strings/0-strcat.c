@@ -1,22 +1,20 @@
 #include "main.h"
 
 /**
- * *_strcat - appends the src string to the dest string
- *
- * Return: A pointer to the resulting dest string
+ * *_strcat - appends strings
+ * @dest: first string
+ * @src: second string
+ * Return: Returns pointer to @dest
  */
 char *_strcat(char *dest, char *src)
 {
-	char s1[] = "dest";
-	char s2[] = "src";
-	char *p;
+	int index = 0, dest_len = 0;
 
-	_putchar("%s\n", s1);
-	_putchar("%s\n", s2);
-	p = _strcat(s1, s2);
-        _putchar("%s\n", s1);
-	_putchar("%s\n", s2);
-	_putchar("%s\n", p);
+	while (dest[index++])
+	dest_len++;
 
-	return (p);
+	for (index = 0; src[index]; index++)
+	dest[dest_len++] = src[index];
+
+	return (dest);
 }
