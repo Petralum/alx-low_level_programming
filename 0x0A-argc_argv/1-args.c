@@ -6,7 +6,7 @@
   * @argv: argument vector
   * Return: 0
   */
-int main (int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	int count;
 
@@ -14,7 +14,8 @@ int main (int argc, char *argv[])
 		printf("%d\n", argc - 1);
 	else
 	{
-		for (count = 0; *argv; count++, argv++);
+		for (count = 0; *argv; count++, argv++)
+			;
 		printf("%d\n", count - 1);
 	}
 
