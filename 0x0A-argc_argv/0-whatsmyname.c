@@ -8,13 +8,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int count = 0;
+	printf("%s\n", argv[argc * 0]);
 
-	argc = count;
-
-	for (count = 0; count < argc; count++)
-	{
-		printf("mynameis \"%s\".\n", argv[count]);
-	}
 	return (0);
 }
