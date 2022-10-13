@@ -5,31 +5,33 @@
 /**
   * main - main.
   * @argc: argument count.
-  * @argv: argument values.
+  * @argv: argument vector
   * Return: 0.
   */
 int main(int argc, char *argv[])
 {
-	int num1, num2, result;
-	int (*skrt)(int, int);
+	int (*func_ptr)(int, int);
 
 	if (argc != 4)
+
 	{
 		printf("Error\n");
 		exit(98);
 	}
 
-	num1 = atoi(argv[1]),
-	num2 = atoi(argv[3]);
-
-	skrt = get_op_func(argv[2]);
-	if (skrt == NULL)
+	if (argv[2][1] != '\0')
 	{
 		printf("Error\n");
 		exit(99);
 	}
-	result = skrt(num1, num2);
-	printf("%d\n", result);
 
+	func_ptr = get_op_func(argv[2]);
+
+	if (func_ptr == NULL)
+	{
+		printf("Error\n");
+		exit(99);
+	}
+	printf("%d\n", func_ptr(atoi(argv[1]), atoi(argv[3])));
 	return (0);
 }
